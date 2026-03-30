@@ -1,0 +1,49 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap');
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  
+  --color-gold: #D4AF37;
+  --color-gold-light: #F9E79F;
+  --color-gold-dark: #9A7D0A;
+}
+
+@layer base {
+  body {
+    @apply bg-white text-zinc-900 font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display text-zinc-900;
+  }
+}
+
+.glass-card {
+  @apply bg-white/80 backdrop-blur-md border border-white/20 rounded-3xl shadow-[0_8px_32px_0_rgba(0,0,0,0.05)] hover:shadow-[0_8px_32px_0_rgba(0,0,0,0.1)] transition-all duration-500;
+}
+
+.gold-gradient {
+  @apply bg-gradient-to-r from-gold-dark via-gold to-gold-light;
+}
+
+.gold-text-gradient {
+  @apply bg-gradient-to-r from-gold-dark via-gold to-gold-light bg-clip-text text-transparent;
+}
+
+.premium-shadow {
+  @apply shadow-[0_20px_50px_rgba(0,0,0,0.05)];
+}
+
+.gold-glow {
+  @apply shadow-[0_0_20px_rgba(212,175,55,0.3)];
+}
+
+.gold-glow-hover:hover {
+  @apply shadow-[0_0_30px_rgba(212,175,55,0.5)];
+}
+
+.section-padding {
+  @apply py-24 px-6 md:px-12 lg:px-24;
+}
