@@ -303,7 +303,7 @@ const About = () => {
             </div>
             <div className="absolute -bottom-10 -left-10 glass-card p-10 max-w-[320px] z-20">
               <p className="text-lg font-light italic text-zinc-600 leading-relaxed">
-                "Our mission is to bridge the gap between visionary brands and world-class digital creators through authentic storytelling."
+                "We don't just connect brands with creators; we craft digital legacies through the art of authentic influence."
               </p>
             </div>
             <div className="absolute -top-10 -right-10 w-40 h-40 bg-gold/10 rounded-full blur-3xl -z-0" />
